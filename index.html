@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html>
-
-
 <title>iGene108</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<head>
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-body, html {
-    height: 100%;
-    line-height: 1.8;
-}
-/* Full height image header */
-.bgimg-1 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("igene108-logo.jpg");
-    min-height: 100%;
-}
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .fit { /* set relative picture size */
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .center {
+    display: block;
+    margin: auto;
+  } 
 
 </style>
-
-
+</head>
 <body>
 
+<img class="center fit" src="igene108-logo.jpg" alt="iGene108">    
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-padding-xxlarge w3-text-white">
-    <span class="w3-jumbo w3-hide-small"></span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br>
-    <span class="w3-large"></span>
-</header>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <p> <h1> <center> Coming Soon. </center> </h1> </p>
-</footer>
- 
- 
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" language="JavaScript">
+  function set_body_height() { // set body height = window height
+    $('body').height($(window).height());
+  }
+  $(document).ready(function() {
+    $(window).bind('resize', set_body_height);
+    set_body_height();
+  });
 </script>
 
+<!-- Footer -->
+
+<div style="font-size: large; font-family: britannic bold">
+  
+<footer>
+  <p style="color: #000000; background-color: #ffffff" > <h1> <center> Coming Soon. </center> </h1> </p>
+</footer>
+ 
 </body>
 </html>
